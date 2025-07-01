@@ -19,7 +19,7 @@ function! easycomment#Uncomment(comment,start, end) abort
 endfunction
 
 function! easycomment#Toggle(start, end) abort
-    let comment = easycomment#lang#Get()
+    let comment = easycomment#lang#Get() . ' '
     let pattern = '^\s*' . escape(comment, '\')
 
     let all_commented = 1
