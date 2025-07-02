@@ -59,12 +59,6 @@ Out-of-the-box support for:
 
 ---
 
-## License
-
-MIT License (see [LICENSE](LICENSE) for details).
-
----
-
 ## Example
 
 Given this C code:
@@ -87,6 +81,8 @@ Run again to uncomment.
 
 ---
 
-## Contributing
+## License
 
-PRs to support more languages or improve behavior are welcome!
+MIT License (see [LICENSE](LICENSE) for details).
+
+---
