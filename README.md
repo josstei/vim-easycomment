@@ -1,6 +1,6 @@
 # vim-easycomment
 
-A minimal, pure-Vimscript plugin to quickly (un)comment lines or blocks of code in Vim/Neovim, with automatic detection of the correct comment string for several filetypes.
+A minimal, pure-Vimscript plugin to quickly (un)comment lines or blocks of code in Vim/Neovim.
 
 ---
 
