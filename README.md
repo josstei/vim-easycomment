@@ -1,3 +1,4 @@
+![Stable](https://img.shields.io/badge/status-under_development-orange) ![License](https://img.shields.io/badge/license-MIT-blue)
 # vim-easycomment
 
 A minimal, pure-Vimscript plugin to quickly (un)comment lines or blocks of code in Vim/Neovim.
