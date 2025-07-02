@@ -7,7 +7,7 @@ A minimal, pure-Vimscript plugin to quickly (un)comment lines or blocks of code 
 ## Features
 
 - Toggle comments on the current line or a visual selection with a single command.
-- Automatically uses the correct comment string for supported languages (Vim, sh, C/C++, Java, Scala, more can be added easily).
+- Automatically uses the correct comment string for supported languages.
 - Indentation-preserving: comments are inserted after leading whitespace.
 - Pure Vimscript; no dependencies.
 
