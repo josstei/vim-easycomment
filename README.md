@@ -82,8 +82,13 @@ Run again to uncomment.
 
 ---
 
-## License
+## Contributing
 
-MIT License (see [LICENSE](LICENSE) for details).
+Contributions are welcome!  
+Feel free to open [issues](https://github.com/josstei/vim-easycomment/issues) or [pull requests](https://github.com/josstei/vim-easycomment/pulls) for improvements or bug fixes.
 
 ---
+
+## License
+
+[MIT License](LICENSE)
