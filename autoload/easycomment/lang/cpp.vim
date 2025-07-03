@@ -1,3 +1,3 @@
 function! easycomment#lang#cpp#get() abort
-    return '//' 
+    return { 'line': '//', 'block': {'start': '/*', 'end': '*/'} }
 endfunction

@@ -1,3 +1,3 @@
 function! easycomment#lang#java#get() abort
-    return '//' 
+    return { 'line': '//', 'block': {'start': '/*', 'end': '*/'} }
 endfunction

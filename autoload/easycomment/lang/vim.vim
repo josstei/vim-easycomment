@@ -1,3 +1,3 @@
 function! easycomment#lang#vim#get() abort
-    return '"' 
+    return { 'line': '"', 'block': {} }
 endfunction
