@@ -1,3 +1,3 @@
-function! easycomment#lang#c#get() abort
+function! easycomment#lang#typescript#get() abort
     return { 'line': '//', 'block': { 'start': '/*', 'end': '*/' } }
 endfunction

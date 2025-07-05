@@ -1,3 +1,3 @@
 function! easycomment#lang#sh#get() abort
-    return '#' 
+    return { 'line': '#' }
 endfunction

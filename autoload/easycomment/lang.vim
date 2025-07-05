@@ -8,3 +8,8 @@ function! easycomment#lang#Get() abort
         return {'line': '', 'block': {}}
     endtry
 endfunction
+
+function! easycomment#lang#BlockStart(lang) abort
+    let block =  get(lang,'block',{})
+    return !empty(block) ? '^\(\s*\)' . escape(lang.block.start, '\') . '\s*' : 1
+endfunction
