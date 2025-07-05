@@ -37,17 +37,22 @@ function! easycomment#Toggle(start, end) abort
 
     let start       = getline(a:start)
     let end         = getline(a:end)
+
     let blockstart  = ''
     let blockend    = ''
 
-    if !empty(lang_block)
+    if multiline && !empty(lang_block)
         let blockstart = '^\s*' . escape(lang.block.start, '\')
         let blockend   = escape(lang.block.end, '\') . '\s*$'
-    else
+    elseif !empty(lang_line)
         let blockstart = '^\s*' . escape(lang.line, '\')
+        let blockend   = ''
+    elseif !empty(lang_block)
+        let blockstart = '^\s*' . escape(lang.block.start, '\')
+        let blockend   = escape(lang.block.end, '\') . '\s*$'
     endif
 
-    if start =~# blockstart && end =~# blockend
+    if start =~# blockstart && (empty(blockend) || end =~# blockend)
         call easycomment#Uncomment(lang, a:start, a:end)
     else
         call easycomment#Comment(lang, a:start, a:end)
